@@ -1,0 +1,19 @@
+.footer {
+    background-color: rgb(10, 4, 22);
+    bottom: 0 !important;
+    padding-top: 10px !important;
+    padding-bottom: 8px !important ;
+
+    ul li{
+      margin: 2px 1.5rem;
+    }
+    .social-link{
+      &:hover{
+        color:#614385;
+      }
+    }
+  }
+
+.list-inline li{
+    font-size: 2rem;
+}

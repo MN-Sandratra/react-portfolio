@@ -1,0 +1,46 @@
+$ligne--gradient:linear-gradient(to top left,
+#141e30 ,
+#243b55);
+
+$tsipikakely:linear-gradient(to top left,#6dd5ed,#c770f0);
+#contact {
+	background: $ligne--gradient;
+	padding-top: 6rem;
+	padding-bottom: 3rem;
+
+    p{
+        font-family: 'Hk Grotesk', sans-serif;
+    }
+    h1,h2,h3,h4{
+        font-family: 'Jost', sans-serif;
+        font-weight: 500;
+    }
+
+    h2{
+        color: whitesmoke;
+
+        &::after{
+            content: '';
+            display: block;
+            height: 3px;
+            width: 7rem;
+            background:$tsipikakely;
+            margin: 2.5rem 0;
+        }
+    }
+
+    .fa,.fas{
+        font-weight: 900;
+        font-size: 4em;
+        color:whitesmoke;
+    }
+}
+#contact h3 {
+	color: #6dd5ed;
+}
+#contact .section-intro h5 {
+	color: #FF0077;
+}
+#contact .section-intro p {
+	color: rgba(255, 255, 255, 0.7);
+}

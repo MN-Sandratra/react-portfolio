@@ -1,0 +1,148 @@
+// variable
+$dark-purple:#523479;
+$back:linear-gradient(to top left,#42275a, #734b6d);
+$tsipikakely:linear-gradient(to top left,#7b4397 , #dc2430);
+
+.work{
+    width: 100vw;
+    height:800px;
+    padding-top: 6rem;
+    background:$back !important ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: left;
+
+    p{
+        font-family: 'Hk Grotesk', sans-serif;
+    }
+    h1,h2,h3,h4{
+        font-family: 'Jost', sans-serif;
+        font-weight: 500;
+    }
+
+    h2{
+        align-self: flex-start;
+        color: whitesmoke;
+
+        &::after {
+            content: '';
+            display: block;
+            height: 3px;
+            width: 7rem;
+            background:$tsipikakely;
+            margin: 2.5rem 0;
+        }
+    }
+     
+    .arrow{
+        position: absolute;
+        color: #FFF;
+        cursor: pointer;
+
+        &.left{
+            left:70px;
+        }
+        &.right{
+            right: 70px;
+        }
+
+        .fa{
+            font-size: 2.7rem;
+        }
+        
+    }
+
+    .slider{
+        height: 350px;
+        position: absolute;
+        left: 0;
+        display: flex;
+        align-items: center;
+        transition: all 1s ease-out;
+        overflow: hidden;
+
+        .work-container{
+            width: 100vw;
+            display: flex;
+            padding: 2rem;
+            align-items: center;
+            justify-content: center;
+
+            .right{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        .card {
+            border: none;
+            background-color: transparent;
+        }
+        
+        .work-container .item{
+            width: 700px;
+            height: 100%;
+            background-color: whitesmoke;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        img{
+            width: 400px;
+            height: auto;
+        }
+    }
+}
+
+@media (max-width:920px) {
+    .arrow{
+        display: none;
+    }
+    .work{
+        height: max-content !important;
+        display: block !important;
+    }
+    img{
+        margin-bottom: 20px !important;
+    }
+    .slider{
+        position:relative !important;
+        height: auto !important;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+
+        .work-container{
+            margin: 1.5rem 0;
+
+            .item{
+                flex-wrap: wrap-reverse;
+            }
+        }
+    }
+}
+
+@media (max-width:700px) {
+    .slider{
+        .item{
+            width: auto !important;
+            height:auto !important;
+            }
+    }
+    img{
+        margin-bottom: 20px !important;
+    }
+}
+@media (max-width:500px) {
+    .slider{
+        img{
+            width: 250px !important;
+            height: auto;
+            margin-bottom: 20px !important;
+        }
+    }
+}

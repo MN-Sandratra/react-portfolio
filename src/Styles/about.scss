@@ -1,0 +1,116 @@
+// variable
+$backcolor:linear-gradient(to bottom left,
+    rgba(17, 16, 16, 0.582),
+    rgba(12, 8, 24, 0.904));
+
+$ligne--gradient:linear-gradient(to top left,
+#614385 ,
+#516395);
+
+$sia-blue:linear-gradient(to top left,
+#141e30,#243b55
+);
+
+$border-light: 1px solid rgb(36, 35, 35);
+$tsipikakely:linear-gradient(to top left,#6dd5ed,#c770f0);
+
+.about-section {
+    position: relative !important;
+    padding-top: 6rem !important;
+    padding-bottom: 3rem !important;
+    background:$sia-blue !important;
+    color: white !important;
+
+    h1 {
+        &::after {
+            content: '';
+            display: block;
+            height: 2.5px;
+            width: 7rem;
+            background:$tsipikakely;
+            margin: 2.5rem 0;
+        }
+    }
+
+    p,ul{
+        font-family: 'Hk Grotesk', sans-serif;
+        color: #e5e5e6da;
+        font-size: 1.2rem;
+        font-weight: 400;
+
+    }
+    .btn-xl {
+        padding: 1.25rem 2.25rem;
+        font-size: .85rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        border: none;
+        color: whitesmoke;
+        border-radius: 10rem;
+        background: $ligne--gradient;
+        transition: all 1s ease 0s !important;
+
+        &:hover{
+            background: $tsipikakely !important;
+            color: #614385;
+        }
+    }
+
+    .tech-icons {
+        font-size: 4.5em !important;
+        margin: 15px !important;
+        padding: 10px !important;
+        opacity: 0.93 !important;
+        border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
+        vertical-align: middle !important;
+        text-align: center !important;
+        border-radius: 5px !important;
+        display: table !important;
+        box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
+        overflow: hidden !important;
+        transition: all 0.4s ease 0s !important;
+
+        &:hover {
+            transform: scale(1.05) !important;
+            overflow: hidden !important;
+            border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .tech-icons {
+        margin: 10px !important;
+    }
+}
+
+.card-body{
+    ul{
+        li{
+            list-style-type: circle !important;
+        }
+    }
+}
+
+.tech-icons .tech-icon-images {
+    padding: 20px !important;
+    line-height: 1.6 !important;
+}
+
+.quote-card-view {
+    border: none !important;
+    color: white !important;
+    background-color: transparent !important;
+}
+
+.about-activity {
+    list-style: none !important;
+    text-align: left !important;
+    padding-left: 1px !important;
+}
+
+@media (max-width: 767px) {
+    .about-img {
+        padding-top: 0 !important;
+    }
+}
