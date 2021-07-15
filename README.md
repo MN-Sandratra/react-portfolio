@@ -1,3 +1,8 @@
+TECH JS WEEK 2 Portfolio
+
+
+to install dependencies use command npm install
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
